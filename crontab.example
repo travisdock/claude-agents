@@ -10,3 +10,6 @@
 
 # Code digest - runs every day at 6 PM
 0 18 * * * /path/to/claude-agents/run-agent.sh code-digest /path/to/your/repo >> /var/log/claude-agents/code-digest.log 2>&1
+
+# Social tracker - runs every Saturday at 2 PM
+0 14 * * 6 /path/to/claude-agents/run-agent.sh social-tracker >> /var/log/claude-agents/social-tracker.log 2>&1
